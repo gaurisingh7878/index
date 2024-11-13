@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-6" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,13 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
 </head>
 
 <style>
-  
+
 </style>
 
 <body class="bg-[#03050e] font-outfit select-none overflow-x-hidden">
@@ -24,7 +25,7 @@
             <div>
                 <img src="MFT_2-removebg-preview.png" alt="Logo" class="w-[6rem]">
             </div>
-    
+
             <!-- Desktop Menu -->
             <ul class="hidden md:flex space-x-6 font-bold text-[1.2rem]">
                 <li>
@@ -38,70 +39,72 @@
                 </li>
             </ul>
             <ul class="md:">
-                <li class="hidden md:block"><button class="cursor-pointer relative group overflow-hidden rounded-md border-2 px-8 py-4 border-[#117389f2]">
-                    <span class="font-bold text-white text-xl relative z-10 group-hover:text-white duration-500">LOGIN</span>
-                    <span class="absolute top-0 left-0 w-full bg-[#117389f2] duration-500 group-hover:-translate-x-full h-full"></span>
-                    <span class="absolute top-0 left-0 w-full bg-[#117389f2] duration-500 group-hover:translate-x-full h-full"></span>
-                    
-                      <span class="absolute top-0 left-0 w-full bg-[#117389f2] duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
-                    <span class="absolute delay-300 top-0 left-0 w-full bg-[#117389f2] duration-500 group-hover:translate-y-full h-full"></span>
-                  </button></li>
+                <li class="hidden md:block"><button
+                        class="cursor-pointer relative group overflow-hidden rounded-md border-2 px-8 py-4 border-[#117389f2]">
+                        <span
+                            class="font-bold text-white text-xl relative z-10 group-hover:text-white duration-500">LOGIN</span>
+                        <span
+                            class="absolute top-0 left-0 w-full bg-[#117389f2] duration-500 group-hover:-translate-x-full h-full"></span>
+                        <span
+                            class="absolute top-0 left-0 w-full bg-[#117389f2] duration-500 group-hover:translate-x-full h-full"></span>
+
+                        <span
+                            class="absolute top-0 left-0 w-full bg-[#117389f2] duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
+                        <span
+                            class="absolute delay-300 top-0 left-0 w-full bg-[#117389f2] duration-500 group-hover:translate-y-full h-full"></span>
+                    </button></li>
             </ul>
-    
+
             <!-- Mobile Menu Button -->
             <div class="md:hidden">
                 <button id="menu-btn" class="text-white focus:outline-none" onclick="toggleMenu()">
-                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
             </div>
         </div>
-    
+
         <!-- Mobile Dropdown Menu - Side Panel -->
-        <div id="mobile-menu" class="md:hidden fixed top-0  left-0  w-72 h-[40rem] bg-[#1ea5c3f2] px-4 py-6 transform -translate-x-full transition-transform duration-300">
+        <div id="mobile-menu"
+            class="md:hidden fixed top-0  left-0  w-72 h-[40rem] bg-[#1ea5c3f2] px-4 py-6 transform -translate-x-full transition-transform duration-300">
             <button class="text-white text-2xl mb-6" onclick="toggleMenu()">&times;</button>
             <ul class=" flex flex-col space-y-4 font-bold text-[1.2rem] text-white p-2">
                 <li>
                     <img src="MFT_2-removebg-preview.png" alt="" class="w-[6rem] ">
-                   
+
                 </li>
                 <li>
                     <a href="#" class="block transition-colors duration-300  ">Home</a>
                     <div class="w-full bg-slate-800 h-[1px] ">
-                        
+
                     </div>
                 </li>
                 <li>
                     <a href="#about" class="block transition-colors duration-300 ">Feature</a>
                     <div class="w-full bg-slate-800 h-[1px] ">
-                        
+
                     </div>
                 </li>
                 <li>
                     <a href="#roadmap" class="block transition-colors duration-300 ">Roadmap</a>
                     <div class="w-full bg-slate-800 h-[1px] ">
-                        
+
                     </div>
                 </li>
                 <li>
-                   
-<button class="cursor-pointer relative group overflow-hidden rounded-md border-2 px-8 py-2 border-green-500">
-  <span class="font-bold text-white text-xl relative z-10 group-hover:text-green-500 duration-500">LOGIN</span>
-  <span class="absolute top-0 left-0 w-full bg-[#117389f2] duration-500 group-hover:-translate-x-full h-full"></span>
-  <span class="absolute top-0 left-0 w-full bg-[#117389f2] duration-500 group-hover:translate-x-full h-full"></span>
-  
-    <span class="absolute top-0 left-0 w-full bg-[#117389f2] duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
-  <span class="absolute delay-300 top-0 left-0 w-full bg-[#117389f2] duration-500 group-hover:translate-y-full h-full"></span>
-</button>
-<div class="w-full bg-slate-800 h-[1px] mt-4 ">
-                        
-</div>
+
+
+                    <div class="w-full bg-slate-800 h-[1px] mt-4 ">
+
+                    </div>
                 </li>
             </ul>
         </div>
     </nav>
-    
+
     <!-- main div -->
     <main>
         <div class="relative bg_img bg-no-repeat min-h-[720px] bg-cover"
@@ -109,20 +112,22 @@
             <div class="flex flex-col md:flex-row justify-between pt-24 md:pt-40 px-6 md:px-20 items-center gap-16">
                 <span class="flex flex-col gap-8 md:gap-16 w-full md:w-auto">
                     <span class="gap-4 md:gap-6 flex flex-col">
-                        <h1 class="text-4xl md:text-6xl text-[1.6rem] text-white font-semibold">Meta Forex token the world</h1>
-                        <h1 class="md:text-5xl text-[1.6rem]  font-semibold text-white ps-20">   of Cryptocurrency</h1>
+                        <h1 class="text-4xl md:text-6xl text-[1.3rem] text-white font-semibold">Meta Forex token the
+                            world</h1>
+                        <h1 class="md:text-5xl text-[1.6rem]  font-semibold text-white ps-[3rem]"> of Cryptocurrency
+                        </h1>
                     </span>
                     <span class="gap-1 flex flex-col">
                         <p class="text-lg md:text-[1.3rem] text-white">
                             Empowering Your Financial Future, One Block at a Time.
 
                         </p>
-                             
+
                     </span>
-                    <div class="flex md:flex-row gap-4">
+                    <div class="flex flex-row gap-4">
 
 
-                        <button class="btn">GET STARTED</button>
+                        <button class="btn ">GET STARTED</button>
                         <a class="btn" href="./src/WHITE PAPER META FOREX TOKEN.pdf">WHITE PAPER</a>
 
 
@@ -132,11 +137,11 @@
         </div>
 
 
-        
 
-    <div>
-        <img src="src\image copy 4.png" alt="" class="w-full">
-    </div>
+
+        <div>
+            <img src="src\image copy 4.png" alt="" class="w-full">
+        </div>
 
 
 
@@ -145,149 +150,76 @@
         <div class="flex flex-col md:flex-row justify-center items-center md:px-20  md:gap-[20rem] md:mt-20 ">
             <!-- Left Section with Images -->
             <div class="relative fadeInLeft">
-              
-                
+
+
                 <svg xmlns="http://www.w3.org/2000/svg" height="200" width="200">
-                  <g style="order: -1;">
-                    <polygon
-                      transform="rotate(45 100 100)"
-                      stroke-width="1"
-                      stroke="#d3a410"
-                      fill="none"
-                      points="70,70 148,50 130,130 50,150"
-                      id="bounce"
-                    ></polygon>
-                    <polygon
-                      transform="rotate(45 100 100)"
-                      stroke-width="1"
-                      stroke="#d3a410"
-                      fill="none"
-                      points="70,70 148,50 130,130 50,150"
-                      id="bounce2"
-                    ></polygon>
-                    <polygon
-                      transform="rotate(45 100 100)"
-                      stroke-width="2"
-                      stroke=""
-                      fill="#414750"
-                      points="70,70 150,50 130,130 50,150"
-                    ></polygon>
-                    <polygon
-                      stroke-width="2"
-                      stroke=""
-                      fill="url(#gradiente)"
-                      points="100,70 150,100 100,130 50,100"
-                    ></polygon>
-                    <defs>
-                      <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente">
-                        <stop style="stop-color: #1e2026;stop-opacity:1" offset="20%"></stop>
-                        <stop style="stop-color:#414750;stop-opacity:1" offset="60%"></stop>
-                      </linearGradient>
-                    </defs>
-                    <polygon
-                      transform="translate(20, 31)"
-                      stroke-width="2"
-                      stroke=""
-                      fill="#b7870f"
-                      points="80,50 80,75 80,99 40,75"
-                    ></polygon>
-                    <polygon
-                      transform="translate(20, 31)"
-                      stroke-width="2"
-                      stroke=""
-                      fill="url(#gradiente2)"
-                      points="40,-40 80,-40 80,99 40,75"
-                    ></polygon>
-                    <defs>
-                      <linearGradient y2="100%" x2="0%" y1="-17%" x1="10%" id="gradiente2">
-                        <stop style="stop-color: #d3a51000;stop-opacity:1" offset="20%"></stop>
-                        <stop
-                          style="stop-color:#d3a51054;stop-opacity:1"
-                          offset="100%"
-                          id="animatedStop"
-                        ></stop>
-                      </linearGradient>
-                    </defs>
-                    <polygon
-                      transform="rotate(180 100 100) translate(20, 20)"
-                      stroke-width="2"
-                      stroke=""
-                      fill="#d3a410"
-                      points="80,50 80,75 80,99 40,75"
-                    ></polygon>
-                    <polygon
-                      transform="rotate(0 100 100) translate(60, 20)"
-                      stroke-width="2"
-                      stroke=""
-                      fill="url(#gradiente3)"
-                      points="40,-40 80,-40 80,85 40,110.2"
-                    ></polygon>
-                    <defs>
-                      <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente3">
-                        <stop style="stop-color: #d3a51000;stop-opacity:1" offset="20%"></stop>
-                        <stop
-                          style="stop-color:#d3a51054;stop-opacity:1"
-                          offset="100%"
-                          id="animatedStop"
-                        ></stop>
-                      </linearGradient>
-                    </defs>
-                    <polygon
-                      transform="rotate(45 100 100) translate(80, 95)"
-                      stroke-width="2"
-                      stroke=""
-                      fill="#ffe4a1"
-                      points="5,0 5,5 0,5 0,0"
-                      id="particles"
-                    ></polygon>
-                    <polygon
-                      transform="rotate(45 100 100) translate(80, 55)"
-                      stroke-width="2"
-                      stroke=""
-                      fill="#ccb069"
-                      points="6,0 6,6 0,6 0,0"
-                      id="particles"
-                    ></polygon>
-                    <polygon
-                      transform="rotate(45 100 100) translate(70, 80)"
-                      stroke-width="2"
-                      stroke=""
-                      fill="#fff"
-                      points="2,0 2,2 0,2 0,0"
-                      id="particles"
-                    ></polygon>
-                    <polygon
-                      stroke-width="2"
-                      stroke=""
-                      fill="#292d34"
-                      points="29.5,99.8 100,142 100,172 29.5,130"
-                    ></polygon>
-                    <polygon
-                      transform="translate(50, 92)"
-                      stroke-width="2"
-                      stroke=""
-                      fill="#1f2127"
-                      points="50,50 120.5,8 120.5,35 50,80"
-                    ></polygon>
-                  </g>
+                    <g style="order: -1;">
+                        <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#d3a410" fill="none"
+                            points="70,70 148,50 130,130 50,150" id="bounce"></polygon>
+                        <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#d3a410" fill="none"
+                            points="70,70 148,50 130,130 50,150" id="bounce2"></polygon>
+                        <polygon transform="rotate(45 100 100)" stroke-width="2" stroke="" fill="#414750"
+                            points="70,70 150,50 130,130 50,150"></polygon>
+                        <polygon stroke-width="2" stroke="" fill="url(#gradiente)"
+                            points="100,70 150,100 100,130 50,100"></polygon>
+                        <defs>
+                            <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente">
+                                <stop style="stop-color: #1e2026;stop-opacity:1" offset="20%"></stop>
+                                <stop style="stop-color:#414750;stop-opacity:1" offset="60%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="#b7870f"
+                            points="80,50 80,75 80,99 40,75"></polygon>
+                        <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="url(#gradiente2)"
+                            points="40,-40 80,-40 80,99 40,75"></polygon>
+                        <defs>
+                            <linearGradient y2="100%" x2="0%" y1="-17%" x1="10%" id="gradiente2">
+                                <stop style="stop-color: #d3a51000;stop-opacity:1" offset="20%"></stop>
+                                <stop style="stop-color:#d3a51054;stop-opacity:1" offset="100%" id="animatedStop">
+                                </stop>
+                            </linearGradient>
+                        </defs>
+                        <polygon transform="rotate(180 100 100) translate(20, 20)" stroke-width="2" stroke=""
+                            fill="#d3a410" points="80,50 80,75 80,99 40,75"></polygon>
+                        <polygon transform="rotate(0 100 100) translate(60, 20)" stroke-width="2" stroke=""
+                            fill="url(#gradiente3)" points="40,-40 80,-40 80,85 40,110.2"></polygon>
+                        <defs>
+                            <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente3">
+                                <stop style="stop-color: #d3a51000;stop-opacity:1" offset="20%"></stop>
+                                <stop style="stop-color:#d3a51054;stop-opacity:1" offset="100%" id="animatedStop">
+                                </stop>
+                            </linearGradient>
+                        </defs>
+                        <polygon transform="rotate(45 100 100) translate(80, 95)" stroke-width="2" stroke=""
+                            fill="#ffe4a1" points="5,0 5,5 0,5 0,0" id="particles"></polygon>
+                        <polygon transform="rotate(45 100 100) translate(80, 55)" stroke-width="2" stroke=""
+                            fill="#ccb069" points="6,0 6,6 0,6 0,0" id="particles"></polygon>
+                        <polygon transform="rotate(45 100 100) translate(70, 80)" stroke-width="2" stroke="" fill="#fff"
+                            points="2,0 2,2 0,2 0,0" id="particles"></polygon>
+                        <polygon stroke-width="2" stroke="" fill="#292d34" points="29.5,99.8 100,142 100,172 29.5,130">
+                        </polygon>
+                        <polygon transform="translate(50, 92)" stroke-width="2" stroke="" fill="#1f2127"
+                            points="50,50 120.5,8 120.5,35 50,80"></polygon>
+                    </g>
                 </svg>
 
                 <div class="absolute inset-0 w-full h-full flex items-center justify-center top-[-2rem] mft-animation">
                     <img src="MFT_2-removebg-preview.png" alt="" class="w-20 h-20   ">
                 </div>
-                
+
             </div>
 
             <!-- Right Section with Text Content -->
             <div class="flex flex-col gap-8 w-full md:w-[45rem] px-4 md:px-0">
                 <h1 class="text-white text-[2rem] md:text-5xl font-semibold">
-                    MFT  Token 
+                    MFT Token
                     Revolutionizing Digital Asset Management
                 </h1>
                 <p class="text-white text-[1.1rem] sm:text-[1.2rem] md:text-[1.3rem]">
-                    MFT Token offers a groundbreaking approach to managing digital assets. Here are some of the key benefits MFTToken provides for users and industries in the digital economy.
+                    MFT Token offers a groundbreaking approach to managing digital assets. Here are some of the key
+                    benefits MFTToken provides for users and industries in the digital economy.
                 </p>
-            
+
                 <!-- Benefits List -->
                 <div class="flex flex-wrap gap-6 md:gap-10">
                     <span class="flex gap-4">
@@ -301,29 +233,32 @@
                         <p class="text-white text-[1rem] sm:text-[1.1rem] md:text-[1.2rem]">Lower Transaction Costs</p>
                     </span>
                 </div>
-            
+
                 <div class="flex flex-wrap gap-6 md:gap-10">
                     <span class="flex gap-4">
                         <img src="https://html.xpressbuddy.com/coindox/assets/img/icon/ul_icon.svg" alt=""
                             class="w-5 h-5 md:w-6 md:h-6" />
-                        <p class="text-white text-[1rem] sm:text-[1.1rem] md:text-[1.2rem]">Immutable and Transparent Records</p>
+                        <p class="text-white text-[1rem] sm:text-[1.1rem] md:text-[1.2rem]">Immutable and Transparent
+                            Records</p>
                     </span>
                 </div>
-            
+
                 <div class="flex flex-wrap gap-6 md:gap-10">
                     <span class="flex gap-4">
                         <img src="https://html.xpressbuddy.com/coindox/assets/img/icon/ul_icon.svg" alt=""
                             class="w-5 h-5 md:w-6 md:h-6" />
-                        <p class="text-white text-[1rem] sm:text-[1.1rem] md:text-[1.2rem]">Cross-Border Accessibility</p>
+                        <p class="text-white text-[1rem] sm:text-[1.1rem] md:text-[1.2rem]">Cross-Border Accessibility
+                        </p>
                     </span>
                     <span class="flex gap-4">
                         <img src="https://html.xpressbuddy.com/coindox/assets/img/icon/ul_icon.svg" alt=""
                             class="w-5 h-5 md:w-6 md:h-6" />
-                        <p class="text-white text-[1rem] sm:text-[1.1rem] md:text-[1.2rem]">Fast and Efficient Transactions</p>
+                        <p class="text-white text-[1rem] sm:text-[1.1rem] md:text-[1.2rem]">Fast and Efficient
+                            Transactions</p>
                     </span>
                 </div>
             </div>
-            
+
         </div>
 
 
@@ -336,10 +271,12 @@
                     <h1 class="text-white text-[2.2rem] sm:text-4xl md:text-5xl">MFT Token Platform</h1>
                 </span>
                 <span class="flex justify-center flex-col gap-2">
-                    <p class="text-slate-500 text-base md:text-[1.2rem]">MFT Token is an advanced digital asset platform</p>
-                    <p class="text-slate-500 text-base sm:text-[1.2rem]">that supports seamless and secure transactions.</p>
+                    <p class="text-slate-500 text-base md:text-[1.2rem]">MFT Token is an advanced digital asset platform
+                    </p>
+                    <p class="text-slate-500 text-base sm:text-[1.2rem]">that supports seamless and secure transactions.
+                    </p>
                 </span>
-        
+
                 <!-- Features Section -->
                 <div class="flex flex-col gap-4">
                     <div class="flex items-center gap-4">
@@ -347,30 +284,33 @@
                             class="w-8 sm:w-10">
                         <h1 class="md:text-[1.6rem] text-[1.2rem] text-white">Cross-Platform Support</h1>
                     </div>
-                    <p class="md:text-[1.2rem] text-slate-500 ps-14">MFT Token supports multiple digital platforms, making it
+                    <p class="md:text-[1.2rem] text-slate-500 ps-14">MFT Token supports multiple digital platforms,
+                        making it
                         adaptable and versatile for users worldwide.</p>
                 </div>
-        
+
                 <div class="flex flex-col gap-2">
                     <div class="flex items-center gap-4">
                         <img src="https://html.xpressbuddy.com/coindox/assets/img/icon/s_02.svg" alt=""
                             class="w-8 sm:w-10">
                         <h1 class="md:text-[1.6rem] text-[1.2rem] text-white">Real-Time Analytics</h1>
                     </div>
-                    <p class="md:text-[1.2rem] text-slate-500 ps-14">Advanced analytics tools for tracking transaction history
+                    <p class="md:text-[1.2rem] text-slate-500 ps-14">Advanced analytics tools for tracking transaction
+                        history
                         and performance in real time.</p>
                 </div>
-        
+
                 <div class="flex flex-col gap-2">
                     <div class="flex items-center gap-4">
                         <img src="https://html.xpressbuddy.com/coindox/assets/img/icon/s_03.svg" alt=""
                             class="w-8 sm:w-10">
                         <h1 class="md:text-[1.6rem] text-white text-[1.2rem]">Enhanced Security Protocols</h1>
                     </div>
-                    <p class="md:text-[1.2rem] text-slate-500 ps-14">MFTToken utilizes top-notch cryptographic security for
+                    <p class="md:text-[1.2rem] text-slate-500 ps-14">MFTToken utilizes top-notch cryptographic security
+                        for
                         safe and reliable transactions.</p>
                 </div>
-        
+
                 <div class="flex flex-col gap-2">
                     <div class="flex items-center gap-4">
                         <img src="https://html.xpressbuddy.com/coindox/assets/img/icon/s_04.svg" alt=""
@@ -381,7 +321,7 @@
                         decisions, fostering community involvement.</p>
                 </div>
             </div>
-        
+
             <!-- Right Content (Images) -->
             <div class="loader relative">
                 <div class="react-star">
@@ -395,7 +335,7 @@
                 </div>
             </div>
         </div>
-        
+
 
 
         <!-------------------------------------------------------------- Live Token Market Updates--------------------------------------------- -->
@@ -404,447 +344,477 @@
             <h1 class="text-white md:text-[5rem] font-medium">Live MFT Token Market Updates</h1>
             <p class="md:text-[1.2rem] text-gray-400">Stay Informed with Real-Time Data and Insights</p>
         </div>
-        
-        <div class="flex flex-row hidden gap-[32rem] md:gap[20rem] items-center mt-10 px-20">
+
+        <div class="flex flex-row hidden gap-[32rem] md:gap-[20rem] items-center mt-10 px-20">
             <h1 class="text-white text-2xl ps-2">Details About MFTToken</h1>
-            <h1 class="text-white text-2xl">Terms & Conditions</h1>
         </div>
-        
+
         <div class="text-white p-8 flex flex-col justify-center md:flex-row gap-8">
             <!-- MFTToken Information Section -->
             <div class="w-full md:w-1/2">
-              <h2 class="text-lg font-semibold mb-4">Details About MFTToken</h2>
-              <div class="space-y-4">
-                <div class="flex justify-between border-[2px] border-[#262932] rounded-lg">
-                  <strong class="bg-slate-800 h-[4rem] md:w-[30rem] w-[11rem] ps-2 flex items-center rounded">Token Name</strong>
-                  <span class="font-semibold flex text-[#B3B3C0] items-center">MFTToken (MFT)</span>
+                <h2 class="text-lg font-semibold mb-4">Details About MFT Token</h2>
+                <div class="space-y-4">
+                    <div class="flex justify-between   border-[2px] border-[#262932]  rounded-lg">
+                        <strong
+                            class="bg-slate-800 h-[3.3rem] md:text-[1.1rem] md:w-[30rem] w-[10rem]  text-[0.8rem] flex items-center rounded ps-2">Token
+                            Name</strong>
+                        <span
+                            class="font-semibold flex md:text-[1.1rem] text-[#B3B3C0] text-[0.8rem] items-center px-2">MFT
+                            Token</span>
+                    </div>
+
+                    <div class="flex justify-between   border-[2px] border-[#262932]  rounded-lg">
+                        <strong
+                            class="bg-slate-800 h-[3.3rem] md:text-[1.1rem] md:w-[30rem] w-[10rem]  text-[0.8rem] flex items-center rounded ps-2">Token
+                            Name</strong>
+                        <span
+                            class="font-semibold flex md:text-[1.1rem] text-[#B3B3C0] text-[0.8rem] items-center px-2"></span>
+                    </div>
+
+                    <div class="flex justify-between   border-[2px] border-[#262932]  rounded-lg">
+                        <strong
+                            class="bg-slate-800 h-[3.3rem] md:text-[1.1rem] md:w-[30rem] w-[10rem]  text-[0.8rem] flex items-center rounded ps-2">Token
+                            Name</strong>
+                        <span
+                            class="font-semibold flex md:text-[1.1rem] text-[#B3B3C0] text-[0.8rem] items-center px-2">MFT
+                            Token (MFT)</span>
+                    </div>
+
+                    <div class="flex justify-between   border-[2px] border-[#262932]  rounded-lg">
+                        <strong
+                            class="bg-slate-800 h-[3.3rem] md:text-[1.1rem] md:w-[30rem] w-[10rem]  text-[0.8rem] flex items-center rounded ps-2">Token
+                            Name</strong>
+                        <span
+                            class="font-semibold flex md:text-[1.1rem] text-[#B3B3C0] text-[0.8rem] items-center px-2">MFT
+                            Token (MFT)</span>
+                    </div>
+
+                    <div class="flex justify-between   border-[2px] border-[#262932]  rounded-lg">
+                        <strong
+                            class="bg-slate-800 h-[3.3rem] md:text-[1.1rem] md:w-[30rem] w-[10rem]  text-[0.8rem] flex items-center rounded ps-2">Token
+                            Name</strong>
+                        <span
+                            class="font-semibold flex md:text-[1.1rem] text-[#B3B3C0] text-[0.8rem] items-center px-2">MFT
+                            Token (MFT)</span>
+                    </div>
                 </div>
-                <div class="flex justify-between bg-gray-800 p-4 rounded-lg">
-                  <span>Nominal Price</span>
-                  <span class="font-semibold">1 MFT = 0.030 USD</span>
-                </div>
-                <div class="flex justify-between bg-gray-800 p-4 rounded-lg">
-                  <span>Total Tokens in Circulation</span>
-                  <span class="font-semibold">5 BN MFT</span>
-                </div>
-                <div class="flex justify-between bg-gray-800 p-4 rounded-lg">
-                  <span>Unused Tokens</span>
-                  <span class="font-semibold">Allocated to Burn Contract</span>
-                </div>
-                <div class="flex justify-between bg-gray-800 p-4 rounded-lg">
-                  <span>Token Standard</span>
-                  <span class="font-semibold">ERC-20</span>
-                </div>
-              </div>
             </div>
         </div>
-        
-              
 
-            <!--------------------------------------- 30% Bonus Active Now ----------------------------------------------->
-        <!-- <div class="justify-center flex flex-col gap-4 items-center mt-40 ">
-    <h1 class="text-white text-5xl font-medium">30% Bonus Active Now</h1>
-    <p class="text-gray-400">The earlier you invest in CRR, higher bonuses you get</p>
-    <div class="flex flex-col gap-10">
-        <div class="flex mt-10 flex-col">
-            <ul class="flex flex-row gap-[8.7rem] ">
-                <li class="text-white text-[2rem]">30%</li>
-                <li class="text-white text-[2rem]">25%</li>
-                <li class="text-white text-[2rem]">20%</li>
-                <li class="text-white text-[2rem]">15%</li>
-                <li class="text-white text-[2rem]">10%</li>
-                <li class="text-white text-[2rem]">5%</li>
-                <li class="text-white text-[2rem]">0%</li> 
-            </ul>
-           <div class="relative mt-10">
-            <h1 class="h-[2px] w-full bg-[#262932]"></h1>
-         
-           <div class="flex flex-row gap-32">
-            
-<div class="ld-ripple absolute top-[-2rem] left-[-1.2rem] w-5 h-5 rounded-full  ">
-  <div></div>
-  <div></div>
-</div>
-<span class="w-4 h-4 rounded-full bg-[#0B0E13] top-[-0.19rem] left-[0.5rem] absolute "></span>
-            <span class="w-8 h-8 rounded-full bg-[#0B0E13] top-[-1rem] left-[14rem] absolute "></span>
-            <span class="w-8 h-8 rounded-full bg-[#0B0E13] top-[-1rem] left-[26rem] absolute "></span>
-            <span class="w-8 h-8 rounded-full bg-[#0B0E13] top-[-1rem] left-[39rem] absolute "></span>
-            <span class="w-8 h-8 rounded-full bg-[#0B0E13] top-[-1rem] left-[51rem] absolute "></span>
-            <span class="w-8 h-8 rounded-full bg-[#0B0E13] top-[-1rem] left-[63.8rem] absolute "></span>
-            <span class="w-8 h-8 rounded-full bg-[#0B0E13] top-[-1rem] left-[76rem] absolute "></span>
-           </div>
-        </div>
-        </div>
-        <div class="">
-            <ul class="flex gap-[6.3rem]">
-                <li class="text-white text-[1rem]">Sep 17-oct 9</li>
-                <li class="text-white text-[1]">Oct 17 - Nov4</li>
-                <li class="text-white text-[1rem]">Nov 5 - Dec4</li>
-                <li class="text-white text-[1rem]">Dec 26-Jan28</li>
-                <li class="text-white text-[1rem]">Jan 17-Feb18</li>
-                <li class="text-white text-[1rem]">Feb 16-Mar10</li>
-                <li class="text-white text-[1rem]">Mar 11-Apr27</li>
-            </ul>
-        </div>
-    </div>
-</div> -->
 
-            <div class="mt-32 flex flex-col md:flex-row justify-center  md:gap-40 p-4 items-center">
-                <!-- Left Section: Token Distribution with Background Image -->
-                <div class="relative w-full md:w-[40rem]">
-                   <div class="">
+
+
+        <!--------------------------------------- 30% Bonus Active Now ----------------------------------------------->
+        <div class="justify-center flex flex-col gap-4 items-center mt-40 ">
+            <h1 class="text-white text-5xl font-medium">30% Bonus Active Now</h1>
+            <p class="text-gray-400">The earlier you invest in CRR, higher bonuses you get</p>
+            <div class="flex flex-col gap-10">
+                <div class="flex mt-10 flex-col">
+                    <ul class="flex flex-row  gap-[8.7rem] ">
+                        <li class="text-white text-[2rem]">30%</li>
+                        <li class="text-white text-[2rem]">25%</li>
+                        <li class="text-white text-[2rem]">20%</li>
+                        <li class="text-white text-[2rem]">15%</li>
+                        <li class="text-white text-[2rem]">10%</li>
+                        <li class="text-white text-[2rem]">5%</li>
+                        <li class="text-white text-[2rem]">0%</li>
+                    </ul>
+                    <div class="relative mt-10">
+                        <h1 class="h-[2px] w-full bg-[#262932]"></h1>
+
+                        <div class="flex flex-row gap-32">
+
+                            <div class="ld-ripple absolute top-[-2rem] left-[-1.2rem] w-5 h-5 rounded-full  ">
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <span
+                                class="w-4 h-4 rounded-full bg-[#0B0E13] top-[-0.19rem] left-[0.5rem] absolute "></span>
+                            <span class="w-8 h-8 rounded-full bg-[#0B0E13] top-[-1rem] left-[14rem] absolute "></span>
+                            <span class="w-8 h-8 rounded-full bg-[#0B0E13] top-[-1rem] left-[26rem] absolute "></span>
+                            <span class="w-8 h-8 rounded-full bg-[#0B0E13] top-[-1rem] left-[39rem] absolute "></span>
+                            <span class="w-8 h-8 rounded-full bg-[#0B0E13] top-[-1rem] left-[51rem] absolute "></span>
+                            <span class="w-8 h-8 rounded-full bg-[#0B0E13] top-[-1rem] left-[63.8rem] absolute "></span>
+                            <span class="w-8 h-8 rounded-full bg-[#0B0E13] top-[-1rem] left-[76rem] absolute "></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <ul class="flex gap-[6.3rem]">
+                        <li class="text-white text-[1rem]">Sep 17-oct 9</li>
+                        <li class="text-white text-[1]">Oct 17 - Nov4</li>
+                        <li class="text-white text-[1rem]">Nov 5 - Dec4</li>
+                        <li class="text-white text-[1rem]">Dec 26-Jan28</li>
+                        <li class="text-white text-[1rem]">Jan 17-Feb18</li>
+                        <li class="text-white text-[1rem]">Feb 16-Mar10</li>
+                        <li class="text-white text-[1rem]">Mar 11-Apr27</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-32 flex flex-col md:flex-row justify-center  md:gap-40 p-4 items-center">
+            <!-- Left Section: Token Distribution with Background Image -->
+            <div class="relative w-full md:w-[40rem]">
+                <div class="">
                     <img src="https://html.xpressbuddy.com/coindox/assets/img/bg/td_bg.png" alt="" class="w-full ">
-                   </div>
-
-                    <!-- Bitcoin Icon -->
-                    <div
-                        class="absolute top-1/4 left-1/4 md:top-32 top-[13%] md:left-32 transform -translate-x-1/2 -translate-y-1/2">
-                        <img src="https://html.xpressbuddy.com/coindox/assets/img/icon/bitcoin_icon.png" alt=""
-                            class="w-20">
-                    </div>
-
-                    <!-- Title and Description -->
-                    <div
-                        class="absolute top-[36%] left-[20%] md:top-[18rem] md:left-[8rem] g transform -translate-x-1/4">
-                        <h1 class="md:text-3xl text-[1rem] text-white ps-20 absolute   ">Token Distribution</h1><br>
-                        <p class="text-[1.3rem] text-white ps-20 absolute ">
-                            Token distribution refers to the process of <br> allocating and distributing tokens within a
-                            <br> blockchain ecosystem.
-                        </p>
-                    </div>
-
-                    <!-- Additional Info -->
-                    <div class="absolute top-[60%] left-[30%] md:top-[33rem] md:left-[8rem] transform -translate-x-1/4">
-                        <p class="text-[1.3rem] text-slate-500 ps-20">
-                            When a new blockchain project is launched, a <br> specific number of tokens are created, and
-                            <br> these tokens are distributed among various <br> stakeholders, including founders.
-                        </p>
-                    </div>
                 </div>
 
-                <!-- Right Section: Token Distribution Image -->
-                <div class="w-full md:w-auto">
-                    <img src="src\Dark Blue and Green Modern Pie Chart Graph (2).png"
-                        alt="Token Distribution">
+                <!-- Bitcoin Icon -->
+                <div
+                    class="absolute top-1/4 left-1/4 md:top-32 top-[13%] md:left-32 transform -translate-x-1/2 -translate-y-1/2">
+                    <img src="MFT_2-removebg-preview.png" alt="" class="w-20">
+                </div>
+
+                <!-- Title and Description -->
+                <div class="absolute top-[36%] left-[20%] md:top-[18rem] md:left-[8rem] g transform -translate-x-1/4">
+                    <h1 class="md:text-3xl text-[1rem] text-white ps-20 absolute   ">Token Distribution</h1><br>
+                    <p class="text-[1.3rem] text-white ps-20 absolute ">
+                        Token distribution refers to the process of <br> allocating and distributing tokens within a
+                        <br> blockchain ecosystem.
+                    </p>
+                </div>
+
+                <!-- Additional Info -->
+                <div class="absolute top-[60%] left-[30%] md:top-[33rem] md:left-[8rem] transform -translate-x-1/4">
+                    <p class="text-[1.3rem] text-slate-500 ps-20">
+                        When a new blockchain project is launched, a <br> specific number of tokens are created, and
+                        <br> these tokens are distributed among various <br> stakeholders, including founders.
+                    </p>
                 </div>
             </div>
 
-            <div id="roadmap" class="flex flex-col items-center mt-10 gap-4 justify-center px-4">
-                <h1 class="text-white text-2xl md:text-3xl">Roadmap</h1>
-                <p class="text-gray-400 text-base md:text-[1.1rem] text-center">Blockchain: a Solid Infrastructure for Growth</p>
+            <!-- Right Section: Token Distribution Image -->
+            <div class="w-full md:w-auto">
+                <img src="src\Dark Blue and Green Modern Pie Chart Graph (2).png" alt="Token Distribution">
             </div>
-            
-            <div  class="relative">
-                <!-- Roadmap Vertical Line -->
-                <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:block">
-                    <img src="https://html.xpressbuddy.com/coindox/assets/img/shape/rmm_shape.png" alt="" class="h-[80vh] md:h-[160vh] w-10 sm:w-20">
-                </div>
-              
-                <!-- Roadmap Stages - Responsive Layout -->
-                <div class="flex flex-col md:flex-row md:gap-[10rem] items-center justify-center mt-10 md:mt-20 space-y-10 md:space-y-0">
-                    <!-- Stage 1 -->
-                    <div class="relative flex flex-col md:flex-row md:gap-8 items-center md:items-start">
-                        <!-- Background Image -->
-                        <img src="https://html.xpressbuddy.com/coindox/assets/img/bg/rm_bg1.png" alt="" class="bg-white md:w-[30rem] w-[18rem]">
-                        
-                        <!-- Content Overlay -->
-                        <div class="absolute inset-0 flex flex-col items-center md:items-start md:ml-10 justify-center md:mt-10 space-y-2 md:space-y-4">
-                            <h1 class="text-white text-xl md:text-2xl">25 sept 2024</h1>
-                            <h2 class="text-white text-lg md:text-[1.7rem]">50 token airdrop</h2>
-                            <p class="text-white text-sm md:text-[2rem]">$0.05</p>
-                          
-                        </div>
-                    </div>
-                    
-            
-                    <!-- Repeat for other stages, adjusting contents as needed -->
-                    
-                    <div class="relative flex flex-col md:flex-row md:gap-8 items-center md:items-start">
-                        <!-- Background Image -->
-                        <img src="https://html.xpressbuddy.com/coindox/assets/img/bg/rm_bg2.png" alt="" class="bg-white md:w-[30rem] w-[18rem]">
-                        
-                        <!-- Content Overlay -->
-                        <div class="absolute inset-0 flex flex-col items-center md:items-start md:ml-10 justify-center md:mt-10 space-y-2 md:space-y-4">
-                            
-                           
-                            <h1 class="text-white text-xl md:text-2xl">Nov 2024</h1>
-                            <h2 class="text-white text-lg md:text-[1.4rem]">play store listing
-                            </h2>
-                               </div>
-                    </div>
-                    
-                    <!-- Add more stages as needed -->
-                </div>
+        </div>
 
-                <div class="flex flex-col md:flex-row md:gap-[10rem] items-center justify-center mt-10 md:mt-20 space-y-10 md:space-y-0">
-                    <!-- Stage 1 -->
-                    <div class="relative flex flex-col md:flex-row md:gap-8 items-center md:items-start">
-                        <!-- Background Image -->
-                        <img src="https://html.xpressbuddy.com/coindox/assets/img/bg/rm_bg1.png" alt="" class="bg-white md:w-[30rem] w-[18rem]">
-                        
-                        <!-- Content Overlay -->
-                        <div class="absolute inset-0 flex flex-col items-center md:items-start md:ml-10 justify-center md:mt-10 space-y-2 md:space-y-4">
-                            <h1 class="text-white text-xl md:text-2xl">May 2025
+        <div id="roadmap" class="flex flex-col items-center mt-10 gap-4 justify-center px-4">
+            <h1 class="text-white text-2xl md:text-3xl">Roadmap</h1>
+            <p class="text-gray-400 text-base md:text-[1.1rem] text-center">Blockchain: a Solid Infrastructure for
+                Growth</p>
+        </div>
 
-                            </h1>
-                            <h2 class="text-white text-lg md:text-[1.6rem]">gaming platform launch
-                            </h2>
-                            <p class="text-white text-sm md:text-[2rem]">$0.11</p>
-                           
-                        </div>
-                    </div>
-            
-                    <!-- Repeat for other stages, adjusting contents as needed -->
-                    
-                    <div class="relative flex flex-col md:flex-row md:gap-8 items-center md:items-start">
-                        <!-- Background Image -->
-                        <img src="https://html.xpressbuddy.com/coindox/assets/img/bg/rm_bg2.png" alt="" class="bg-white md:w-[30rem] w-[18rem]">
-                        
-                        <!-- Content Overlay -->
-                        <div class="absolute inset-0 flex flex-col items-center md:items-start md:ml-10 justify-center md:mt-10 space-y-2 md:space-y-4">
-                           
-                            <h1 class="text-white text-xl md:text-2xl">jan 2026</h1>
-                            <h2 class="text-white text-lg md:text-[1.7rem]">recharge utility services</h2>
-                            <p class="text-white text-sm md:text-[2rem]">$0.5</p>
-                         
-                        </div>
-                    </div>
-                    
-                    <!-- Add more stages as needed -->
-                </div>
+        <div class="relative">
+            <!-- Roadmap Vertical Line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:block">
+                <img src="https://html.xpressbuddy.com/coindox/assets/img/shape/rmm_shape.png" alt=""
+                    class="h-[80vh] md:h-[160vh] w-10 sm:w-20">
+            </div>
 
-                <div class="flex flex-col md:flex-row md:gap-[10rem] items-center justify-center mt-10 md:mt-20 space-y-10 md:space-y-0">
-                    <!-- Stage 1 -->
-                    <div class="relative flex flex-col md:flex-row md:gap-8 items-center md:items-start">
-                        <!-- Background Image -->
-                        <img src="https://html.xpressbuddy.com/coindox/assets/img/bg/rm_bg1.png" alt="" class="bg-white md:w-[30rem] w-[18rem]">
-                        
-                        <!-- Content Overlay -->
-                        <div class="absolute inset-0 flex flex-col items-center md:items-start md:ml-10 justify-center md:mt-10 space-y-2 md:space-y-4">
-                            <h1 class="text-white text-xl md:text-2xl">april 2027
-                            </h1>
-                            <h2 class="text-white text-lg md:text-[1.4rem]">isting on exchange and <br> coin market caplisted
-                            </h2>
-                            <p class="text-white text-sm md:text-[2rem]">$1.25</p>
-                        </div>
-                    </div>
-            
-                    <!-- Repeat for other stages, adjusting contents as needed -->
-                    
-                    <div class="relative flex flex-col md:flex-row md:gap-8 items-center md:items-start">
-                        <!-- Background Image -->
-                        <img src="https://html.xpressbuddy.com/coindox/assets/img/bg/rm_bg2.png" alt="" class="bg-white md:w-[30rem] w-[18rem]">
-                        
-                        <!-- Content Overlay -->
-                        <div class="absolute inset-0 flex flex-col  md:items-start md:ml-12 ps-8 justify-center md:mt-10 space-y-2 md:space-y-4">
-                            <h1 class="text-white text-xl md:text-2xl">feb 2028 & above</h1>
-                            <h2 class="text-white text-lg md:text-[1.7rem]">elf blockchain and  exchange
-                            </h2>
-                            <p class="text-white text-sm md:text-[2rem]">$5</p>
-                          
-                        </div>
-                    </div>
-                    
-                    
-                    <!-- Add more stages as needed -->
-                </div>
-                <br>
-                <div class="relative flex flex-col md:flex-row md:gap-8 items-center md:items-start justify-center">
+            <!-- Roadmap Stages - Responsive Layout -->
+            <div
+                class="flex flex-col md:flex-row md:gap-[10rem] items-center justify-center mt-10 md:mt-20 space-y-10 md:space-y-0">
+                <!-- Stage 1 -->
+                <div class="relative flex flex-col md:flex-row md:gap-8 items-center md:items-start">
                     <!-- Background Image -->
-                    <img src="https://html.xpressbuddy.com/coindox/assets/img/bg/rm_bg1.png" alt="" class="bg-white md:w-[30rem] w-[18rem]">
-                    
+                    <img src="https://html.xpressbuddy.com/coindox/assets/img/bg/rm_bg1.png" alt=""
+                        class="bg-white md:w-[30rem] w-[18rem]">
+
                     <!-- Content Overlay -->
-                    <div class="absolute inset-0 flex flex-col  md:items-start md:ml-[46rem]  left-40  justify-center mt-[1rem] md:mt-10 space-y-2 md:space-y-4">
-                        <h1 class="text-white text-xl md:text-3xl">Jan 2029</h1>
-                        <h2 class="text-white text-lg md:text-[1.7rem]">$50
+                    <div
+                        class="absolute inset-0 flex flex-col items-center md:items-start md:ml-10 justify-center md:mt-10 space-y-2 md:space-y-4">
+                        <h1 class="text-white text-xl md:text-2xl">25 sept 2024</h1>
+                        <h2 class="text-white text-lg md:text-[1.7rem]">50 token airdrop</h2>
+                        <p class="text-white text-sm md:text-[2rem]">$0.05</p>
+
+                    </div>
+                </div>
+
+
+                <!-- Repeat for other stages, adjusting contents as needed -->
+
+                <div class="relative flex flex-col md:flex-row md:gap-8 items-center md:items-start">
+                    <!-- Background Image -->
+                    <img src="https://html.xpressbuddy.com/coindox/assets/img/bg/rm_bg2.png" alt=""
+                        class="bg-white md:w-[30rem] w-[18rem]">
+
+                    <!-- Content Overlay -->
+                    <div
+                        class="absolute inset-0 flex flex-col items-center md:items-start md:ml-10 justify-center md:mt-10 space-y-2 md:space-y-4">
+
+
+                        <h1 class="text-white text-xl md:text-2xl">Nov 2024</h1>
+                        <h2 class="text-white text-lg md:text-[1.4rem]">play store listing
                         </h2>
-                        
-                      
+                    </div>
+                </div>
+
+                <!-- Add more stages as needed -->
+            </div>
+
+            <div
+                class="flex flex-col md:flex-row md:gap-[10rem] items-center justify-center mt-10 md:mt-20 space-y-10 md:space-y-0">
+                <!-- Stage 1 -->
+                <div class="relative flex flex-col md:flex-row md:gap-8 items-center md:items-start">
+                    <!-- Background Image -->
+                    <img src="https://html.xpressbuddy.com/coindox/assets/img/bg/rm_bg1.png" alt=""
+                        class="bg-white md:w-[30rem] w-[18rem]">
+
+                    <!-- Content Overlay -->
+                    <div
+                        class="absolute inset-0 flex flex-col items-center md:items-start md:ml-10 justify-center md:mt-10 space-y-2 md:space-y-4">
+                        <h1 class="text-white text-xl md:text-2xl">May 2025
+
+                        </h1>
+                        <h2 class="text-white text-lg md:text-[1.6rem]">gaming platform launch
+                        </h2>
+                        <p class="text-white text-sm md:text-[2rem]">$0.11</p>
+
+                    </div>
+                </div>
+
+                <!-- Repeat for other stages, adjusting contents as needed -->
+
+                <div class="relative flex flex-col md:flex-row md:gap-8 items-center md:items-start">
+                    <!-- Background Image -->
+                    <img src="https://html.xpressbuddy.com/coindox/assets/img/bg/rm_bg2.png" alt=""
+                        class="bg-white md:w-[30rem] w-[18rem]">
+
+                    <!-- Content Overlay -->
+                    <div
+                        class="absolute inset-0 flex flex-col items-center md:items-start md:ml-10 justify-center md:mt-10 space-y-2 md:space-y-4">
+
+                        <h1 class="text-white text-xl md:text-2xl">jan 2026</h1>
+                        <h2 class="text-white text-lg md:text-[1.7rem]">recharge utility services</h2>
+                        <p class="text-white text-sm md:text-[2rem]">$0.5</p>
+
+                    </div>
+                </div>
+
+                <!-- Add more stages as needed -->
+            </div>
+
+            <div
+                class="flex flex-col md:flex-row md:gap-[10rem] items-center justify-center mt-10 md:mt-20 space-y-10 md:space-y-0">
+                <!-- Stage 1 -->
+                <div class="relative flex flex-col md:flex-row md:gap-8 items-center md:items-start">
+                    <!-- Background Image -->
+                    <img src="https://html.xpressbuddy.com/coindox/assets/img/bg/rm_bg1.png" alt=""
+                        class="bg-white md:w-[30rem] w-[18rem]">
+
+                    <!-- Content Overlay -->
+                    <div
+                        class="absolute inset-0 flex flex-col items-center md:items-start md:ml-10 justify-center md:mt-10 space-y-2 md:space-y-4">
+                        <h1 class="text-white text-xl md:text-2xl">april 2027
+                        </h1>
+                        <h2 class="text-white text-lg md:text-[1.4rem]">isting on exchange and <br> coin market
+                            caplisted
+                        </h2>
+                        <p class="text-white text-sm md:text-[2rem]">$1.25</p>
+                    </div>
+                </div>
+
+                <!-- Repeat for other stages, adjusting contents as needed -->
+
+                <div class="relative flex flex-col md:flex-row md:gap-8 items-center md:items-start">
+                    <!-- Background Image -->
+                    <img src="https://html.xpressbuddy.com/coindox/assets/img/bg/rm_bg2.png" alt=""
+                        class="bg-white md:w-[30rem] w-[18rem]">
+
+                    <!-- Content Overlay -->
+                    <div
+                        class="absolute inset-0 flex flex-col  md:items-start md:ml-12 ps-8 justify-center md:mt-10 space-y-2 md:space-y-4">
+                        <h1 class="text-white text-xl md:text-2xl">feb 2028 & above</h1>
+                        <h2 class="text-white text-lg md:text-[1.7rem]">elf blockchain and exchange
+                        </h2>
+                        <p class="text-white text-sm md:text-[2rem]">$5</p>
+
+                    </div>
+                </div>
+
+
+                <!-- Add more stages as needed -->
+            </div>
+            <br>
+            <div class="relative flex flex-col md:flex-row md:gap-8 items-center md:items-start justify-center">
+                <!-- Background Image -->
+                <img src="https://html.xpressbuddy.com/coindox/assets/img/bg/rm_bg1.png" alt=""
+                    class="bg-white md:w-[30rem] w-[18rem]">
+
+                <!-- Content Overlay -->
+                <div
+                    class="absolute inset-0 flex flex-col  md:items-start md:ml-[46rem]  left-40  justify-center mt-[1rem] md:mt-10 space-y-2 md:space-y-4">
+                    <h1 class="text-white text-xl md:text-3xl">Jan 2029</h1>
+                    <h2 class="text-white text-lg md:text-[1.7rem]">$50
+                    </h2>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center md:mt-52 gap-3 mt-[4.5rem]">
+            <h1 class="text-white md:text-3xl text-[1.5rem]">MFT Forex token</h1>
+            <p class="text-white text-lg">Have questions? We have answers!</p>
+
+            <div class="Common  flex justify-between items-center flex-col md:px-[40rem] ">
+
+
+                <div
+                    class="faq-item flex flex-col gap-2 items-center justify-center rounded-3xl p-8  md:w-full w-[22rem]">
+                    <span class="question flex justify-between md:gap-16 gap-[8rem] items-center text-white md:w-full ">
+                        <h1 class="md:text-2xl text-[1rem] flex-1 font-semibold ">CO Supply (5%)</h1>
+                        <i class="plus-icon fa-solid fa-plus text-2xl"></i>
+                    </span>
+                    <span class="answer hidden items-center text-white">
+                        <p class=" md:text-[1rem] text-zinc-400 font-medium  ">
+                            he ICO (Initial Coin Offering) supply is reserved for our public token sale. This allocation
+                            provides early investors with the
+                            opportunity to purchase MFT tokens at a discounted rate before they are listed on exchanges.
+                            The funds raised during
+                            the ICO will be used to further develop our platform, expand our market reach, and enhance
+                            our technology
+                            infrastructure.
+
+                        </p>
+                    </span>
+                    <div class="md:w-[82rem] w-[20rem] h-[1px] bg-[#404040]">
+
+                    </div>
+                </div>
+
+                <div class="faq-item  flex flex-col gap-2 items-center justify-center rounded-3xl p-8  w-full">
+                    <span
+                        class="question  flex justify-between md:gap-12 gap-[3rem] p-2 items-center text-white md:w-full">
+                        <h1 class="md:text-2xl text-[1rem]  flex-1 font-semibold">Community & Other (50%)</h1>
+                        <i class="plus-icon fa-solid fa-plus text-2xl"></i>
+                    </span>
+                    <span class="answer hidden flex items-center text-white">
+                        <p class=" text-[1rem] text-zinc-400 font-medium p">
+                            This significant portion is dedicated to building and engaging our community, rewarding
+                            active participants, and
+                            supporting various initiatives that foster ecosystem growth. This includes rewards for
+                            community members, marketing
+                            campaigns, partnerships, and other activities that enhance the MFT ecosystem.
+                        </p>
+                    </span>
+                    <div class="w-full h-[1px] bg-[#404040]">
+
+                    </div>
+                </div>
+                <div class="faq-item  flex flex-col gap-2 items-center justify-center rounded-3xl p-8  w-full">
+                    <span class="question  flex justify-between gap-[5rem] items-center text-white md:w-full">
+                        <h1 class="md:text-2xl flex-1 font-semibold">Treasury & Team (5%)</h1>
+                        <i class="plus-icon fa-solid fa-plus text-2xl"></i>
+                    </span>
+                    <span class="answer hidden flex items-center text-white">
+                        <p class=" text-[1rem] text-zinc-400 font-medium">
+                            he treasury allocation is designated for future needs and unforeseen expenses. It also
+                            includes compensation for the
+                            team, ensuring that our core team members are rewarded for their ongoing efforts and
+                            commitment to the platform's
+                            success.
+
+
+                        </p>
+                    </span>
+                    <div class="w-full h-[1px] bg-[#404040]">
+
+                    </div>
+                </div>
+
+                <div class="faq-item  flex flex-col gap-2 items-center justify-center rounded-3xl p-8  w-full">
+                    <span class="question flex justify-between gap-[5rem] items-center text-white md:w-full">
+                        <h1 class="md:text-2xl flex-1 font-semibold">Founders & Team (5%)</h1>
+                        <i class="plus-icon fa-solid fa-plus text-2xl"></i>
+                    </span>
+                    <span class="answer hidden flex items-center text-white">
+                        <p class="  text-[1rem] text-zinc-400 font-medium">
+                            his allocation is specifically for the founders and the core team who have played a critical
+                            role in the development and
+                            launch of Meta Forex Trade. This ensures that those who have been instrumental in building
+                            the platform are rewarded
+                            for their contributions.
+                        </p>
+                    </span>
+                    <div class="w-full h-[1px] bg-[#404040]">
+
+                    </div>
+                </div>
+
+                <div class="faq-item flex flex-col gap-2 items-center justify-center rounded-3xl p-8  w-full">
+                    <span class="question   flex justify-between gap-[5rem] items-center text-white md:w-full">
+                        <h1 class="md:text-2xl flex-1 font-semibold">Private Innovation (5%)</h1>
+                        <i class="plus-icon fa-solid fa-plus text-2xl"></i>
+                    </span>
+                    <span class="answer hidden flex items-center text-white">
+                        <p class=" text-[1rem] text-zinc-400 font-medium">
+                            Reserved for private investors and strategic partners who contribute to the platform's
+                            development and innovation. This
+                            includes early-stage investments and partnerships that provide additional resources and
+                            support for MFT’s growth.
+                        </p>
+                    </span>
+                    <div class="w-full h-[1px] bg-[#404040]">
+
                     </div>
                 </div>
             </div>
-            
-    <div class="flex flex-col items-center md:mt-52 gap-3 mt-[4.5rem]">
-        <h1 class="text-white md:text-3xl text-[1.5rem]">MFT orex token</h1>
-        <p class="text-white text-lg">Have questions? We have answers!</p>
+        </div><br>
 
-        <div  class="Common  flex justify-between items-center flex-col md:px-[40rem] ">
-            
-        
-            <div
-              class="faq-item flex flex-col gap-2 items-center justify-center rounded-3xl p-8  md:w-full w-[22rem]">
-              <span  class="question flex justify-between md:gap-16 gap-[7rem] items-center text-white md:w-full ">
-                <h1 class="md:text-2xl text-[1rem] flex-1 font-semibold ">CO Supply (5%)</h1>
-                <i  class="plus-icon fa-solid fa-plus text-2xl"></i>
-              </span> 
-              <span class="answer hidden items-center text-white">
-                <p class=" md:text-[1rem] text-zinc-400 font-medium  ">
-                    he ICO (Initial Coin Offering) supply is reserved for our public token sale. This allocation provides early investors with the
-opportunity to purchase MFT tokens at a discounted rate before they are listed on exchanges. The funds raised during
-the ICO will be used to further develop our platform, expand our market reach, and enhance our technology
-infrastructure.
-
-                </p>
-              </span>
-              <div class="md:w-[82rem] w-[20rem] h-[1px] bg-[#404040]">
-
-              </div>
-            </div>
-        
-            <div
-            class="faq-item  flex flex-col gap-2 items-center justify-center rounded-3xl p-8  w-full">
-            <span  class="question  flex justify-between md:gap-12 gap-[1rem] p-2 items-center text-white md:w-full">
-              <h1 class="md:text-2xl text-[1rem]  flex-1 font-semibold">Community & Other (50%)</h1>
-              <i  class="plus-icon fa-solid fa-plus text-2xl"></i>
-            </span> 
-            <span class="answer hidden flex items-center text-white">
-              <p  class=" text-[1rem] text-zinc-400 font-medium p">
-                This significant portion is dedicated to building and engaging our community, rewarding active participants, and
-                supporting various initiatives that foster ecosystem growth. This includes rewards for community members, marketing
-                campaigns, partnerships, and other activities that enhance the MFT ecosystem.
-              </p>
-            </span>
-            <div class="w-full h-[1px] bg-[#404040]">
-
-            </div>
-          </div>
-          <div
-          class="faq-item  flex flex-col gap-2 items-center justify-center rounded-3xl p-8  w-full">
-          <span  class="question  flex justify-between gap-8 items-center text-white md:w-full">
-            <h1 class="md:text-2xl flex-1 font-semibold">Treasury & Team (5%)</h1>
-            <i  class="plus-icon fa-solid fa-plus text-2xl"></i>
-          </span> 
-          <span class="answer hidden flex items-center text-white">
-            <p class=" text-[1rem] text-zinc-400 font-medium">
-                he treasury allocation is designated for future needs and unforeseen expenses. It also includes compensation for the
-                team, ensuring that our core team members are rewarded for their ongoing efforts and commitment to the platform's
-                success.
-                
-                
-            </p>
-          </span>
-          <div class="w-full h-[1px] bg-[#404040]">
-
-          </div>
-        </div>
-        
         <div
-              class="faq-item  flex flex-col gap-2 items-center justify-center rounded-3xl p-8  w-full">
-              <span  class="question flex justify-between gap-8 items-center text-white md:w-full">
-                <h1 class="md:text-2xl flex-1 font-semibold">Founders & Team (5%)</h1>
-                <i  class="plus-icon fa-solid fa-plus text-2xl"></i>
-              </span> 
-              <span class="answer hidden flex items-center text-white">
-                <p class="  text-[1rem] text-zinc-400 font-medium">
-                    his allocation is specifically for the founders and the core team who have played a critical role in the development and
-                    launch of Meta Forex Trade. This ensures that those who have been instrumental in building the platform are rewarded
-                    for their contributions.
-                </p>
-              </span>
-              <div class="w-full h-[1px] bg-[#404040]">
-
-              </div>
-            </div>
-        
-            <div
-            class="faq-item flex flex-col gap-2 items-center justify-center rounded-3xl p-8  w-full">
-            <span  class="question   flex justify-between gap-8 items-center text-white md:w-full">
-              <h1 class="md:text-2xl flex-1 font-semibold">Private Innovation (5%)</h1>
-              <i  class="plus-icon fa-solid fa-plus text-2xl"></i>
-            </span> 
-            <span class="answer hidden flex items-center text-white">
-              <p class=" text-[1rem] text-zinc-400 font-medium">
-                Reserved for private investors and strategic partners who contribute to the platform's development and innovation. This
-includes early-stage investments and partnerships that provide additional resources and support for MFT’s growth.
-              </p>
-            </span>
-            <div class="w-full h-[1px] bg-[#404040]">
-
-            </div>
-          </div>
-          </div>
-    </div><br>
-
-    <div class="bg-url bg-no-repeat bg-cover bg-center bg-[url('https://html.xpressbuddy.com/coindox/assets/img/bg/footer_bg2.jpg')] py-2">
-        <div class="flex flex-col md:flex-row justify-between md:px-72 px-4 items-center gap-4 md:mt-72 mt-10">
-            <span>
-                <h1 class="text-white md:text-4xl text-2xl text-center md:text-left">Get regular updates</h1>
-            </span>
-            <span class="flex flex-col md:flex-row items-center gap-2 w-full md:w-auto">
-                <input type="text" placeholder="Enter your email" class="px-4 py-3 md:py-4 bg-transparent border-2 border-white rounded-3xl w-full md:w-auto">
-                <button class="px-6 py-3 md:py-4 rounded-2xl bg-transparent border-2 border-white text-white w-full md:w-auto">Subscribe</button>
-            </span>
-        </div>
-        <div class="hidden md:block  mt-10 w-full h-[2px] bg-[#404040]">
-
-        </div>
-
-        <div class="flex flex-col md:flex-row justify-between items-center md:px-40 px-6 mt-20 md:mt-40 gap-8 md:gap-0">
-            <ul class="flex justify-center md:block">
-                <li><img src="MFT_2-removebg-preview.png" alt="Logo" class="w-40 md:w-72"></li>
-            </ul>
-            <ul class="flex flex-col gap-2 items-center md:items-start">
-                <li class="text-white text-xl md:text-2xl">Quick Links</li>
-                <li class="text-gray-400 text-lg md:text-xl">Whitepaper</li>
-                <li class="text-gray-400 text-lg">One pager</li>
-                <li class="text-gray-400 text-lg">Presentation</li>
-                <li class="text-gray-400 text-lg">Contact</li>
-                <li class="text-gray-400 text-lg">Token Sale</li>
-            </ul>
-            <ul class="flex flex-col gap-2 items-center md:items-start">
-                <li class="text-white text-xl md:text-2xl">Other Links</li>
-                <li class="text-gray-400 text-lg">About</li>
-                <li class="text-gray-400 text-lg">API Docs</li>
-                <li class="text-gray-400 text-lg">News</li>
-                <li class="text-gray-400 text-lg">Team</li>
-                <li class="text-gray-400 text-lg">FAQ</li>
-            </ul>
-            <ul class="flex flex-col gap-2 items-center md:items-start">
-                <li class="text-white text-xl md:text-2xl">Legal</li>
-                <li class="text-gray-400 text-lg">Privacy Policy</li>
-                <li class="text-gray-400 text-lg">Terms & Conditions</li>
-                <li class="text-gray-400 text-lg">Disclaimer</li>
-                <li class="text-gray-400 text-lg">Sitemap</li>
-                <li class="text-gray-400 text-lg">Terms of Use</li>
-            </ul>
-        </div>
-        <div class="h-[2px] w-full  bg-[#404040]">
-
-        </div>
-        <!-- <div class="flex flex-row justify-between px-40 items-center mt-20">
-            <span>
-                <h1 class="text-2xl text-white">Copyright © 2023 Coindox. All rights reserved.</h1>
-            </span>
-            <span>
-                <div class="card">
-                  <a href="#" class="socialContainer containerOne">
-                    <svg class="socialSvg instagramSvg" viewBox="0 0 16 16"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> </svg>
-                  </a>
-
-                  <a href="#" class="socialContainer containerTwo">
-                    <svg class="socialSvg twitterSvg" viewBox="0 0 16 16"> <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path> </svg>              </a>
-                    
-                  <a href="#" class="socialContainer containerThree">
-                    <svg class="socialSvg linkdinSvg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
-                  </a>
-                  
-                  <a href="#" class="socialContainer containerFour">
-                    <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path> </svg>
-                  </a>
-                </div>             
-                
+            class="bg-url bg-no-repeat bg-cover bg-center bg-[url('https://html.xpressbuddy.com/coindox/assets/img/bg/footer_bg2.jpg')] py-2">
+            <div class="flex flex-col md:flex-row justify-between md:px-72 px-4 items-center gap-4 md:mt-72 mt-10">
+                <span>
+                    <h1 class="text-white md:text-4xl text-2xl text-center md:text-left">Get regular updates</h1>
                 </span>
-        </div> -->
-        
-</div>
+                <span class="flex flex-col md:flex-row items-center gap-2 w-full md:w-auto">
+                    <input type="text" placeholder="Enter your email"
+                        class="px-4 py-3 md:py-4 bg-transparent border-2 border-white rounded-3xl w-full md:w-auto">
+                    <button
+                        class="px-6 py-3 md:py-4 rounded-2xl bg-transparent border-2 border-white text-white w-full md:w-auto">Subscribe</button>
+                </span>
+            </div>
+            <div class="hidden md:block  mt-10 w-full h-[2px] bg-[#404040]">
+
+            </div>
+
+            <div
+                class="flex flex-col md:flex-row justify-between items-center md:px-40 px-6 mt-20 md:mt-40 gap-8 md:gap-0">
+                <ul class="flex justify-center md:block">
+                    <li><img src="MFT_2-removebg-preview.png" alt="Logo" class="w-40 md:w-72"></li>
+                </ul>
+                <ul class="flex flex-col gap-2 items-center md:items-start">
+                    <li class="text-white text-xl md:text-2xl">Quick Links</li>
+                    <li class="text-gray-400 text-lg md:text-xl">Whitepaper</li>
+                    <li class="text-gray-400 text-lg">One pager</li>
+                    <li class="text-gray-400 text-lg">Presentation</li>
+                    <li class="text-gray-400 text-lg">Contact</li>
+                    <li class="text-gray-400 text-lg">Token Sale</li>
+                </ul>
+                <ul class="flex flex-col gap-2 items-center md:items-start">
+                    <li class="text-white text-xl md:text-2xl">Other Links</li>
+                    <li class="text-gray-400 text-lg">About</li>
+                    <li class="text-gray-400 text-lg">API Docs</li>
+                    <li class="text-gray-400 text-lg">News</li>
+                    <li class="text-gray-400 text-lg">Team</li>
+                    <li class="text-gray-400 text-lg">FAQ</li>
+                </ul>
+                <ul class="flex flex-col gap-2 items-center md:items-start">
+                    <li class="text-white text-xl md:text-2xl">Legal</li>
+                    <li class="text-gray-400 text-lg">Privacy Policy</li>
+                    <li class="text-gray-400 text-lg">Terms & Conditions</li>
+                    <li class="text-gray-400 text-lg">Disclaimer</li>
+                    <li class="text-gray-400 text-lg">Sitemap</li>
+                    <li class="text-gray-400 text-lg">Terms of Use</li>
+                </ul>
+            </div>
+            <div class="h-[2px] w-full  bg-[#404040]">
+
+            </div>
+
+
+        </div>
 
 
     </main>
 
 
     <script>
-       
-        $(".question").click(function(){
+
+        $(".question").click(function () {
             $(this).siblings(".answer").slideToggle()
             $(this).parent(".faq-item").siblings(".faq-item").children(".answer").slideUp()
         })
@@ -853,7 +823,7 @@ includes early-stage investments and partnerships that provide additional resour
     <script>
 
 
-function toggleMenu() {
+        function toggleMenu() {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('-translate-x-full');
         }
